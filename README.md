@@ -36,7 +36,7 @@ npm start
 
 ### rapid-proto integration
 ```bash
-rp -n [prototypeName] -v jspm
+rp -n [prototypeName] -v rje
 ```
 
 [npm-image]: https://img.shields.io/npm/v/rapid-proto.svg?style=flat-square
