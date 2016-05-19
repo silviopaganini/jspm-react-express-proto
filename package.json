@@ -1,0 +1,59 @@
+{
+  "name": "jspm-react-express-proto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "jspm install",
+    "start": "node server/index.js & npm run watch & npm run sass",
+    "watch": "browser-sync start --files \"app\" --proxy http://localhost:8888 --no-notify",
+    "sass": "node-sass -w app/css -o app/css/ --output-style compressed",
+    "build": "make build",
+    "release": "make release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silviopaganini/jspm-react-express-proto"
+  },
+  "bugs": {
+    "url": "https://github.com/silviopaganini/jspm-react-express-proto/issues"
+  },
+  "author": "silvio paganini | @silviopaganini",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "normalize.css": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "jspm": "^0.16.34",
+    "node-sass": "^3.4.2"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 5.6.0",
+    "npm": ">=3.6.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "app"
+    },
+    "dependencies": {
+      "flux": "npm:flux@^2.1.1",
+      "keymirror": "npm:keymirror@^0.1.1",
+      "object-assign": "npm:object-assign@^4.1.0",
+      "react": "npm:react@^15.0.2",
+      "react-dom": "npm:react-dom@^15.0.2",
+      "react-router": "npm:react-router@^2.4.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
