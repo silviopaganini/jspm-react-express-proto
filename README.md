@@ -7,10 +7,11 @@ Using ES6 and [JSPM](http://jspm.io)
 * browser-sync
 
 #### Dependencies
-* dat-gui
-* stats-js
-* three
-* three-orbit-controls
+* react
+* react-dom
+* flux
+* react-router
+* express
 
 ## Rapid proto command line tool
 
