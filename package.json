@@ -6,7 +6,7 @@
   "scripts": {
     "install": "jspm install",
     "start": "node server/index.js & npm run watch & npm run sass",
-    "watch": "browser-sync start --files \"app\" --proxy http://localhost:8888 --no-notify",
+    "watch": "browser-sync start --files \"app/**.js\" \"app/css/*.css\" \"app/views/*.ejs\" --proxy http://localhost:8888 --no-notify",
     "sass": "node-sass -w app/css -o app/css/ --output-style compressed",
     "build": "make build",
     "release": "make release",
